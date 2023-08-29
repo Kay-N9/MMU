@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
+
+@font-face {
+    font-family: 'point_panther_demobold';
+    src: url('../font/pointpanther_demo-webfont.woff2') format('woff2'),
+         url('../font/pointpanther_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'anuratiregular';
+    src: url('anurati-regular-webfont.woff2') format('woff2'),
+         url('anurati-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/******************************************************************************************** SET ****************************************************************************************/
+
+
+.w100{
+    width: 100%;
+}
+.w95{
+    width: 95%;
+}
+.w40{
+    width: 40%;
+}
+.w30{
+    width: 30%;
+}
+
+.mb50{
+    margin-bottom: 20rem;
+}
+
+body{
+    background: url(../img/personage.png), black no-repeat;
+    background-size: cover;
+    color: white;
+    text-transform: uppercase;
+}
+
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rela{
+    position: relative;
+}
+
+.absol{
+    position: absolute;
+}
+
+.fixe{
+    position: fixed;
+}
+/********************************************************************************** HEAD ************************************************************************************************/
+
+#enter{
+    right: 30%;
+    top: 25%;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    animation-delay: .5s;
+
+    font-size: 30rem;
+}
+
+h1{
+    font-family: 'anuratiregular';
+    font-size: 12.5rem;
+    margin: 0 10%;
+}
+
+h2{
+    font-family: 'point_panther_demobold';
+    font-size: 4.0625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.20313rem;
+}
+
+p{
+    text-transform:none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 10%;
+}
+
+/* ***************************************************************************** MAIN *********************************************************************************************************/
+main{
+    margin: 0 auto;
+    max-width: 1440px;
+    margin-top: 10%;
+        
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+
+.luminous{
+    width: 29.125rem;
+    height: 27.25rem;
+    flex-shrink: 0;
+    border-radius: 29.125rem;
+    filter: blur(150px);
+}
+.lum{
+    background: #9C0000;
+    left: -10%;
+    top: -2%;
+    z-index: -1;
+}
+
+.lum1{
+    background: #D98C8C;
+    right: -20%;
+    top: -50%;
+    z-index: -1;
+}
+
+.lum2{
+    width: 33.375rem;
+    height: 31.25rem;
+    border-radius: 33.125rem;
+    background: #A47548;
+    left: -10%;
+    bottom: 10%;
+    z-index: -1;
+}
+
+/******************************************************************************** THEME ********************************************************************************************/
+
+.debut{
+    margin-left: 15%;
+}
+
+.theme1{
+    height: 45rem;
+    margin-bottom: 20%;
+}
+
+.description{
+    position: absolute;
+    left: -20%;
+    top: 50%;
+}
+
+.press{
+    width: 50%;
+    height: 50%;
+}
+.press img{
+    width: 100%;
+}
+
+
+.theme2{
+    left: 5%;
+    width: 85%;
+    margin-bottom: 10%;
+}
+
+.theme2 h2{
+    text-align: end;
+    margin-bottom: 5%;
+}
+
+.spe div{
+    width: 15.5625rem;
+    height: 12.25rem;
+    margin: 0 1%;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.spe img, 
+.gal img{
+    height: 100%;
+}
+
+.theme3{
+    justify-content: space-between;
+    margin-left: 15%;
+}
+
+
+.theme4 h2{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+
+.gal{
+    justify-content: center;
+    align-items: center;
+}
+
+.gal div {
+    width: 321px;
+    height: 290px;
+    margin: 0 1%;
+    overflow: hidden;
+    justify-content: center;
+}
+/* ANIMATION */
+
+.animate {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
+
+@-webkit-keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      display: none;
+    }
+}
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}

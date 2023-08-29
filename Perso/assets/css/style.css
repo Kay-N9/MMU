@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
+
+@font-face {
+    font-family: 'point_panther_demobold';
+    src: url('../font/pointpanther_demo-webfont.woff2') format('woff2'),
+         url('../font/pointpanther_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/******************************************************************************************** SET ****************************************************************************************/
+
+::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+section,
+footer {
+    scroll-snap-align: start end;
+}
+
+.w100{
+    width: 100%;
+}
+.w95{
+    width: 95%;
+}
+.w40{
+    width: 40%;
+}
+.w30{
+    width: 30%;
+}
+
+.mb50{
+    margin-bottom: 25rem;
+}
+
+body{
+    background: url(../img/personage.png), black no-repeat;
+    background-size: cover;
+    color: white;
+    text-transform: uppercase;
+}
+
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rela{
+    position: relative;
+}
+
+.absol{
+    position: absolute;
+}
+
+/********************************************************************************** HEAD ************************************************************************************************/
+
+h1{
+    font-family: 'point_panther_demobold';
+    font-size: 4rem;
+    margin-bottom: 5%;
+}
+
+
+/* ***************************************************************************** MAIN *********************************************************************************************************/
+main{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.container{
+    justify-content: center;
+}
+
+/******************************************************************************** SELECTOR ********************************************************************************************/
+.selector {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.selector li{
+    align-items: center;
+}
+
+.select-item{
+    height: 5rem;
+    width: 18rem;
+    margin: 5% 0;
+}
+
+.select-item:hover{
+    border: solid white  3px;
+}
+
+
+.photo{
+    height: 5rem;
+    overflow: hidden;
+}
+
+.photo img{
+    width: 100%;
+}
+
+.name{
+    width: 60%;
+    text-align: center;
+    font-family: 'point_panther_demobold';
+    font-size: 2rem;
+}
+
+/******************************************************************************************** SHOW *********************************************************************/
+
+.show{
+    width: 61rem;
+
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+  

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>MMU-Perso's</title>
+</head>
+<body>
+    <header class="d-flex w95">
+        <img id="logo" src="assets/img/logo-mini.png" alt="" class="fadeIn animate">
+        
+        <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+        </label>
+        <ul class="d-flex ancres w30">
+            <li><a href="../index.html" class="puce">Home</a></li>
+            <li><a href="#" class="puce">Perso's</a></li>
+            <li><a href="../Histoire/index.html" class="puce">Histoire</a></li>
+            <li><a href="../Gallerie/index.html" class="puce">Gallerie</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="lum "></div>
+        <h1>Personnages</h1>
+        <div class="container flex">
+            <ul class="selector flex">
+                <li onclick="selectPerso('Personnages/KHY/index.html'), changePerso('assets/img/Perso/PERSO8.png')" class="select-item flex">
+                    <div class="photo"><img src="assets/img/Miniature/Rec9.png" alt="KHY"></div>
+                    <div class="name">KHY</div>
+                </li>
+                <li onclick="selectPerso('Personnages/Lyn/index.html'), changePerso('assets/img/Perso/PERSO3.png')" class="select-item flex">
+                    <div class="photo"><img src="assets/img/Miniature/Rec4.png" alt="Lyn"></div>
+                    <div class="name">Lyn</div>
+                </li>
+                <li onclick="selectPerso('Personnages/M/index.html'), changePerso('assets/img/Perso/PERSO4.png')" class="select-item flex">
+                    <div class="photo"><img src="assets/img/Miniature/Rec6.png" alt="M"></div>
+                    <div class="name">M</div>
+                </li>
+                <li onclick="selectPerso('Personnages/KY/index.html'), changePerso('assets/img/Perso/PERSO2.png')" class="select-item flex">
+                    <div class="photo"><img src="assets/img/Miniature/Rec8.png" alt="KH"></div>
+                    <div class="name">KY</div>
+                </li>
+                <li onclick="selectPerso('Personnages/Shiro/index.html'), changePerso('assets/img/Perso/PERSO.png')" class="select-item flex">
+                    <div class="photo"><img src="assets/img/Miniature/Rec1.png" alt="Shiro"></div>
+                    <div class="name">Shiro</div>
+                </li>
+            </ul>
+
+            <div class="show"><a id="link" href=""><img id="big" src="assets/img/Perso/Chaise.png" alt=""></a></div>
+
+            <ul class="selector flex">
+                <li onclick="selectPerso('Personnages/Key\'s/index.html'), changePerso('assets/img/Perso/PERSO9.png')" class="select-item flex">
+                    <div class="photo"><img src="assets/img/Miniature/Rec5.png" alt="Key's"></div>
+                    <div class="name">Key's</div>
+                </li>
+                <li onclick="selectPerso('Personnages/Shin/index.html'), changePerso('assets/img/Perso/PERSO6.png')" class="select-item flex">
+                    <div class="photo"><img src="assets/img/Miniature/Rec3.png" alt="Shin"></div>
+                    <div class="name">Shin</div>
+                </li>
+                <li onclick="selectPerso('Personnages/N/index.html'), changePerso('assets/img/Perso/PERSO5.png')" class="select-item flex">
+                    <div class="photo"><img src="assets/img/Miniature/Rec2.png" alt="N"></div>
+                    <div class="name">N</div>
+                </li>
+                <li onclick="selectPerso('Personnages/KH/index.html'), changePerso('assets/img/Perso/PERSO7.png')" class="select-item flex">
+                    <div class="photo"><img src="assets/img/Miniature/Rec7.png" alt="KY"></div>
+                    <div class="name">KH</div>
+                </li>
+                <li onclick="selectPerso('Personnages/Hunoi/index.html'), changePerso('assets/img/Perso/PERSO1.png')" class="select-item flex">
+                    <div class="photo"><img src="assets/img/Miniature/Rec.png" alt="Hunoi"></div>
+                    <div class="name">Huno</div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
